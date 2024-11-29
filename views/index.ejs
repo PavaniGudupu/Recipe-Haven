@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Haven</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main>
+        <!-- First Banner: Left-Aligned Content -->
+        <div class="main">
+            <div class="main-banner">
+                <div class="banner-content">
+                    <h1>Discover Delicious <br>Recipes</h1>
+                    <p>Explore a variety of delicious recipes and <br> find inspiration for your next meal.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Banner: card section -->
+        <div class="main">
+            <div class="main-banner-two">
+                <div class="banner-content">
+                    <section class="cards-section">
+                        <h2>Featured Recipes</h2>
+                        <center><p>Search to get the recipes</p></center>
+                        <div class="card-container">
+                            <% if (contentImage) { %>
+                                <div class="card">
+                                    <img src="<%= contentImage %>" alt="Recipe Image">
+                                    <h3><%= dishName %></h3>
+                                    <p>Category: <%= category %></p>
+                                    <p>Area: <%= area %></p>
+                                    <br>
+                                    <a href="<%= link %>">Watch on YouTube</a>
+                                </div>
+                            <% } else { %>
+                                <p><%= dishName %></p> <!-- Display a message if no meal is found -->
+                            <% } %>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Section: Centered -->
+        <section class="search-section">
+            <h2>Find Your Recipe</h2>
+            <form action="/search" method="GET">
+                <input name="name" type="text" id="searchInput" placeholder="Search for a meal..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Powered by PavaniGudupu</p>
+    </footer>
+</body>
+</html>

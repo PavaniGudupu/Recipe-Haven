@@ -1,0 +1,180 @@
+/* styles.css */
+/* Main container */
+
+
+/* General Reset */
+body, h1, h2, h3, p, section {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: #ffaa00;
+}
+
+body {
+    background-color: #000000; /* Dark background */
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General Styling for Banners */
+/* General Styling for Banners */
+/* General Styling for Banners */
+.main {
+    margin-bottom: 20px;
+}
+
+.main-banner, .main-banner-one, .main-banner-two {
+    height: 60vh; /* Adjust height as needed */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center;
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main-banner {
+    background-image: url('wp12265779.webp');
+    justify-content: flex-start; /* Text aligned to the left */
+    padding-left: 20px;
+}
+
+.main-banner-one {
+    background-image: url('blue.jpg');
+    justify-content: center; /* Text aligned to the center */
+}
+
+.main-banner-two {
+    padding-top: 5%;
+    background-image: url('black.jpg');
+    justify-content: center; /* Text aligned to the center */
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+}
+
+/* Cards Section */
+.cards-section h2 {
+    padding-top: 15%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffae42;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2c2c2e;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.card img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: #ffae42;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Search Section */
+.search-section {
+    padding-top: 5%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.search-section h2 {
+    padding-top: 5%;
+    font-size: 2rem;
+    color: #ffae42;
+    margin-bottom: 10px;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 5%;
+}
+
+#searchInput {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ffae42;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background-color: #2c2c2e;
+    width: 250px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#searchInput::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffae42;
+    color: #1c1c1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth zoom and color change */
+}
+
+button:hover {
+    background-color: #ffaa00;
+    transform: scale(1.1); /* Slightly increase the size */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c2c2e;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
